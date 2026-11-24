@@ -22,6 +22,16 @@
 @media(min-width:48rem){.hero,.aboutgrid,.contactgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.hero{padding-block:clamp(3.75rem,8vw,7.6rem) 2rem;gap:clamp(2rem,5vw,4.5rem)}.hero h1{font-size:clamp(3rem,6.1vw,5.75rem)}.aboutgrid{grid-template-columns:minmax(0,.73fr) minmax(0,1.27fr)}.aboutgrid .portrait{order:0;min-height:320px}}
 @media(min-width:64rem){.hero{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}.cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .aboutgrid .portrait{display:block;width:100%;max-width:28rem;min-height:0;margin-inline:auto;overflow:hidden}.portrait img{display:block;width:100%;height:auto}
+
+.footer-links{display:flex;flex-wrap:wrap;gap:.25rem 1rem;align-items:center}
+.footer-links a,.legal-contact a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;overflow-wrap:anywhere}
+.footer-links a{color:white;text-underline-offset:.2em}
+.legal{max-width:52rem;overflow-wrap:anywhere}
+.legal h1{font-size:clamp(2.4rem,7vw,4.5rem);margin-bottom:1.75rem}
+.legal h2{font-size:clamp(1.35rem,4vw,1.9rem);margin-bottom:.75rem}
+.legal section{padding-block:1.25rem;border-top:1px solid var(--line)}
+.legal address{font-style:normal}.legal a:not(.btn),.form .hint a{color:var(--accent);text-underline-offset:.16em}
+.legal .btn{background:var(--accent);color:white;margin-top:1rem}
 </style>
 </head>
 <body>
@@ -81,8 +91,9 @@
 <label class="field">Deine Nachricht<textarea name="nachricht" maxlength="1200" required></textarea></label>
 <button class="btn" type="submit" aria-describedby="mail-hinweis">E-Mail öffnen</button>
 <p class="hint" id="mail-hinweis">Dein E-Mail-Programm öffnet einen Entwurf. Dort kannst du ihn prüfen und senden.</p>
+<p class="hint">Mit dem Absenden Ihrer Anfrage erklären Sie sich mit der Verarbeitung Ihrer Angaben zur Bearbeitung Ihrer Anfrage einverstanden. Weitere Informationen finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
 </form></div></section></main>
-<footer class="footer dark"><div class="wrap"><span>© Daniel Behr</span><a href="#inhalt">Nach oben</a></div></footer>
+<footer class="footer dark"><div class="wrap"><span>© Daniel Behr</span><nav class="footer-links" aria-label="Footer"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="#inhalt">Nach oben</a></nav></div></footer>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="whatsapp-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.049-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.261.489 1.692.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.511-5.259c.002-5.45 4.436-9.884 9.889-9.884a9.82 9.82 0 0 1 6.988 2.897 9.82 9.82 0 0 1 2.893 6.994c-.002 5.45-4.436 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol></svg>
 <a class="float-wa" id="whatsapp-button" href="https://wa.me/4917631724732?text=Hallo%20Daniel%2C%20ich%20habe%20deine%20Webseite%20gefunden%20und%20interessiere%20mich%20f%C3%BCr%20deine%20Unterst%C3%BCtzung%20bei%20einem%20Projekt." aria-label="Daniel Behr auf WhatsApp schreiben"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#whatsapp-icon"/></svg></a>
 <script>
